@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'segoe ui light';
+    background: #3d7eaa;
+    background: -webkit-linear-gradient(to right, #ffe47a, #3d7eaa);
+    background: linear-gradient(to right, #ffe47a, #3d7eaa);
+    color: #fff
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 2.5em
+}
+
+li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    color: #fff
+}
+
+li span {
+    display: block;
+    font-size: 3.5rem;
+    color: rgba(247, 255, 86, .83);
+    font-family: Orbitron, sans-serif
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 10vh
+}
+
+.data {
+    transform: translate(0, 50%);
+    -webkit-transform: translate(0, 50%);
+    -moz-transform: translate(0, 50%);
+    -ms-transform: translate(0, 50%);
+    -o-transform: translate(0, 50%)
+}
+
+
+@media only screen and (max-width:1025px) {
+    h1 {
+        font-weight: 800;
+        font-size: 8vh
+    }
+    h3 {
+        font-size: 2.5em
+    }
+    li span {
+        font-size: 2.8rem
+    }
+    li {
+        font-size: 1em
+    }
+}
+
+@media only screen and (max-width:769px) {
+    h1 {
+        font-weight: 800;
+        font-size: 6.5vh
+    }
+    h3 {
+        font-size: 2em
+    }
+    li span {
+        font-size: 2em
+    }
+    li {
+        font-size: 1em
+    }
+}
+
+
+@media only screen and (max-width:426px) {
+    h1 {
+        font-weight: 600;
+        font-size: 3.5vh
+    }
+    h3 {
+        font-size: 20px
+    }
+    li span {
+        font-size: 1.5em
+    }
+    li {
+        font-size: 15px
+    }
+    .data {
+        transform: translate(0, 150%);
+        -moz-transform: translate(0, 150%);
+        -webkit-transform: translate(0, 150%);
+        -ms-transform: translate(0, 150%);
+        -o-transform: translate(0, 150%)
+    }
+}
+
+@media only screen and (max-width:376px) {
+    h1 {
+        font-weight: 400;
+        font-size: 4vh
+    }
+    h3 {
+        font-size: 15px;
+        font-weight: 200
+    }
+    li span {
+        font-size: 1em
+    }
+    li {
+        font-size: 10px
+    }
+    .data {
+        transform: translate(0, 150%);
+        -moz-transform: translate(0, 150%);
+        -webkit-transform: translate(0, 150%);
+        -ms-transform: translate(0, 150%);
+        -o-transform: translate(0, 150%)
+    }
+}
