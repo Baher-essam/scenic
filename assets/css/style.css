@@ -15,6 +15,7 @@ a, a:hover{color: #000; text-decoration: none;}
   letter-spacing: .1rem; 
 }
 .p-sm-4 {padding: 4%;}
+.text-sm-center {text-align: center;}
 header
 {
     position: relative;
@@ -434,8 +435,51 @@ header::after
 .blog-content-text {grid-column:2/-1;}
 .blog-content-text p {font-weight: 500; border-bottom: solid 1px #d8d8d8;}
 .blog-info  {font-size: 14px;  color: #495057;}
-/*start of blog section*/
+/*end of blog section*/
 
+/*start of footer*/
+footer
+{
+  background: #001f42;
+  position: relative;
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+  overflow: hidden;
+  padding: 10% 0 0;
+}
+footer::before
+{
+  content: '^';
+  font-weight: 300;
+  color: #fff;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 50%;
+  background-color: #007bff;
+}
+footer .container {width: 65%;}
+.footer-content
+{
+  display: grid;
+  padding: 5% 0 0;
+  grid-template-columns: repeat(4,1fr);
+  margin: 5% 0 ;
+}
+.footer-content >div  {margin: 0 auto;}
+.footer-content >div:last-child {grid-column: 1/-1; font-size: 12px;}
+.footer-content h6
+{
+  color: #fff;
+  font-size: 14px;
+}
+.footer-content a 
+{
+  color: #007bff;
+  font-size: 12px;
+}
+.footer-content a:hover {text-decoration: underline;}
+/*end of footer*/
 
 /*start of media query*/
 @media only screen and (max-width: 1025px)
@@ -457,7 +501,7 @@ header::after
 @media only screen and (max-width: 1025px)
 {
   /*services section and portfolio*/
-    .services .container , .portfolio .container, .blog .container {width: auto;}
+    .services .container , .portfolio .container, .blog .container , footer .container {width: auto;}
   /*services section and portfolio*/
 
   /*portfolio section*/
@@ -471,7 +515,7 @@ header::after
    .about .col-12 .col-sm-6  {width: 50%;}
    /*about section*/
   /*portfolio section*/
-  .portfolio-grid {grid-template-columns: repeat(2 ,1fr);}
+  .portfolio-grid  , .footer-content {grid-template-columns: repeat(2 ,1fr);}
   .portfolio-grid >div:last-child {grid-column: 1/-1;}
   /*portfolio section*/
 }
@@ -482,8 +526,10 @@ header::after
   .about-numbers > span  {font-size: 14px;}
   /*about section*/
     /*portfolio section*/
-    .portfolio-grid {grid-template-columns: repeat(1 ,1fr);}
+    .portfolio-grid  {grid-template-columns: repeat(1 ,1fr);}
     /*portfolio section*/
     .blog-content-text p {font-size: 14px;}
+    footer{  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);}
+    .footer-content {margin: 15% 0 5%; padding: 20% 0 0;}
 }
 /*end of media query*/
