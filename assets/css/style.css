@@ -440,11 +440,8 @@ header::after
 /*start of footer*/
 footer
 {
-  background: #001f42;
   position: relative;
-  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
   overflow: hidden;
-  padding: 10% 0 0;
 }
 footer::before
 {
@@ -454,17 +451,33 @@ footer::before
   position: absolute;
   width: 30px;
   height: 30px;
-  top: 0;
+  top: 11%;
   left: 50%;
   background-color: #007bff;
+  z-index: 1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 10px;
+  line-height: 1;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.footer-clip
+{
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+  background: #001f42;
+  padding: 10% 0 0 ;
 }
 footer .container {width: 65%;}
 .footer-content
 {
   display: grid;
-  padding: 5% 0 0;
+  padding: 5% 0;
   grid-template-columns: repeat(4,1fr);
-  margin: 5% 0 ;
+ 
 }
 .footer-content >div  {margin: 0 auto;}
 .footer-content >div:last-child {grid-column: 1/-1; font-size: 12px;}
@@ -529,7 +542,8 @@ footer .container {width: 65%;}
     .portfolio-grid  {grid-template-columns: repeat(1 ,1fr);}
     /*portfolio section*/
     .blog-content-text p {font-size: 14px;}
-    footer{  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);}
-    .footer-content {margin: 15% 0 5%; padding: 20% 0 0;}
+    .footer-clip{  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);}
+    footer::before {top: 6%}
+    .footer-content {margin: 15% 0 0; padding: 20% 0 5%;}
 }
 /*end of media query*/
