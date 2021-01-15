@@ -19,8 +19,8 @@
 </head>
 <body>
     <!--start of navbar-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-transparent fixed-top ">
-        <div class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-transparent fixed-top px-0">
+        <div class="container px-2">
             <a class="navbar-brand text-capitalize" href="#">Scenic</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -49,19 +49,23 @@
     </nav>
     <!--end of navbar-->
     <!--start of header-->
-    <header id="home" class="d-flex justify-content-center align-items-center">
-        <div class="path-layout ">
-            <video autoplay muted loop id="myVideo" src="assets/videos/video.mp4">
-                <source src="assets/videos/video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="header-content text-center">
-                <h1 class="text-uppercase">we are senic</h1>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quibusdam possimus quasi porro! Itaque?</p>
-                <a href="#" class="text-uppercase px-3 py-2">get in touch</a>
+    <header id="home">
+        <div class="header-clip ">
+            <div class="header-content text-center d-flex justify-content-center align-items-center px-2">
+                <div class="text-white" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <h1 class="text-uppercase">we are senic</h1>
+                    <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quibusdam possimus quasi porro! Itaque?</p>
+                    <a href="#" class="text-uppercase px-3 py-2 mt-3 text-white">get in touch</a>
+                </div>
             </div>
-            <div class="scroll-down"></div>
+            <div class="header-video">
+                <video autoplay muted loop id="myVideo">
+                    <source src="assets/videos/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
+        <a class="down-btn text-white" href="#about">^</a>
     </header>
     <!--end of header-->
 
