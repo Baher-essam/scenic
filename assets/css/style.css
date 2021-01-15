@@ -160,7 +160,7 @@ header::after
 
 
 /*start of about services*/
-.services {background-color: #f8f9fa;}
+.services {background-color: #f8f9fa; overflow: hidden;}
 .services .container {width: 65%;}
 .lamp
 {
@@ -256,7 +256,7 @@ header::after
 /*end of about services*/
 
 /*start of portfolio*/
-.portfolio {margin: 5% 0;}
+.portfolio {margin: 5% 0; overflow: hidden;}
 .portfolio .container { width: 65%;}
 .portfolio-grid
 {
@@ -390,7 +390,7 @@ header::after
 
 
 /*start of blog section*/
-.blog {margin: 10% 0 5%;}
+.blog {margin: 10% 0 5%; overflow: hidden;}
 .blog .container {width: 65%;}
 .blog-content
 {
@@ -443,18 +443,15 @@ footer
   position: relative;
   overflow: hidden;
 }
-footer::before
+footer .top-btn
 {
-  content: '^';
-  font-weight: 300;
-  color: #fff;
   position: absolute;
-  width: 30px;
-  height: 30px;
   top: 11%;
   left: 50%;
-  background-color: #007bff;
+  width: 35px;
+  height: 35px;
   z-index: 1;
+  background-color: #007bff;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -462,8 +459,9 @@ footer::before
   -o-border-radius: 50%;
   padding: 10px;
   line-height: 1;
+  font-size: 22px;
   transform: translateX(-50%);
-  cursor: pointer;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.7);
 }
 .footer-clip
 {
@@ -543,7 +541,7 @@ footer .container {width: 65%;}
     /*portfolio section*/
     .blog-content-text p {font-size: 14px;}
     .footer-clip{  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);}
-    footer::before {top: 6%}
+    footer .top-btn{top: 7%}
     .footer-content {margin: 15% 0 0; padding: 20% 0 5%;}
 }
 /*end of media query*/

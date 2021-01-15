@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Portifolo Website for Baher Essam">
+    <meta name="description" content="Demo Website">
     <meta name="keyword" content="Baher website, Baher Essam, Baher-Essam, baher-essam.com">
     <!--logos-->
     <link rel="icon" href="assets/images/quote.png">
@@ -18,38 +18,38 @@
     <title>Scenic</title>
 </head>
 <body>
-
-        <nav class="navbar navbar-expand-sm navbar-dark bg-transparent fixed-top ">
-            <div class="container">
-                <a class="navbar-brand text-capitalize" href="#">Scenic</a>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                    </ul>
-                </div>
+    <!--start of navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-transparent fixed-top ">
+        <div class="container">
+            <a class="navbar-brand text-capitalize" href="#">Scenic</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0 text-uppercase">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">BLOG</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-
-  
-    <header class="d-flex justify-content-center align-items-center">
+        </div>
+    </nav>
+    <!--end of navbar-->
+    <!--start of header-->
+    <header id="home" class="d-flex justify-content-center align-items-center">
         <div class="path-layout ">
             <video autoplay muted loop id="myVideo" src="assets/videos/video.mp4">
                 <source src="assets/videos/video.mp4" type="video/mp4">
@@ -63,12 +63,13 @@
             <div class="scroll-down"></div>
         </div>
     </header>
+    <!--end of header-->
 
     <!-- start of about us section-->
-    <section class="my-5 about">
+    <section id="about" class="my-5 about">
         <div class="container">
             <div class="row align-items-center py-4">
-                <div class="col-md-6 col-sm-12 py-3">
+                <div class="col-md-6 col-sm-12 py-3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
                     <div class="about-content">
                         <span class="text-capitalize">about us</span>
                         <h4 class="text-capitalize">WHO ARE YOU GUYS</h4>
@@ -77,7 +78,7 @@
                         <a href="#" class="text-uppercase">read more about us</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 py-3">
+                <div class="col-md-6 col-sm-12 py-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                     <div class="grid-about-container">
                         <div>
                             <picture>
@@ -97,7 +98,7 @@
                 </div>
                 <div class="col-12 mt-5 pt-5">
                     <div class="row pt-5">
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="100">
                             <div class="about-numbers text-center">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <img src="assets/images/responsive-design.svg" alt="">
@@ -106,7 +107,7 @@
                                 <span>Completed Projects</span>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100">
                             <div class="about-numbers text-center">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <img src="assets/images/lamp.svg" alt="">
@@ -115,7 +116,7 @@
                                 <span>Winners & Awards</span>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="100">
                             <div class="about-numbers text-center">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <img src="assets/images/trophy.svg" alt="">
@@ -124,7 +125,7 @@
                                 <span>Number of Team</span>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6" data-aos="fade-down-left" data-aos-duration="1000" data-aos-delay="100">
                             <div class="about-numbers text-center">
                                 <div class="d-flex justify-content-center align-items-center">
                                     <img src="assets/images/plugin.svg" alt="">
@@ -141,16 +142,16 @@
     <!-- end of about us section-->
 
     <!-- start of services section-->
-    <section class="my-5 services py-5 text-center">
+    <section id="services" class="my-5 services py-5 text-center">
         <div class="container">
             <div class="row">
-                <div class="col-12 py-3 mb-4">
-                    <div class="services-title">
+                <div class="col-12 py-3 mb-4"   data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0">
+                    <div class="services-title" >
                         <span class="text-capitalize section-title-span">our services</span>
                         <h2 class="text-uppercase section-title">services</h2>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
                     <a href="#">
                         <div class="service-item p-4">
                             <div class="service-item-img mb-4">
@@ -162,7 +163,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="150">
                     <a href="#">
                         <div class="service-item p-4">
                             <div class="service-item-img mb-4">
@@ -174,7 +175,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
                     <a href="#">
                         <div class="service-item p-4">
                             <div class="service-item-img mb-4">
@@ -186,7 +187,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="250">
                     <a href="#">
                         <div class="service-item p-4">
                             <div class="service-item-img mb-4">
@@ -198,7 +199,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
                     <a href="#">
                         <div class="service-item p-4">
                             <div class="service-item-img mb-4">
@@ -210,7 +211,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250">
                     <a href="#">
                         <div class="service-item p-4">
                             <div class="service-item-img mb-4">
@@ -221,7 +222,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-12 mt-4">
+                <div class="col-12 mt-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0">
                     <div class="services-btn text-center my-3">
                         <a href="#" class="text-capitalize px-3 py-2">view all services</a>
                     </div>
@@ -233,16 +234,16 @@
     <!-- end of services section-->
 
     <!-- start of portfolio section-->
-    <section class=" portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="portfolio-grid">
                 <div class="text-center">
-                    <div class="portfolio-title">
+                    <div class="portfolio-title"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0">
                         <span class="text-capitalize section-title-span">awesome works</span>
                         <h2 class="text-uppercase section-title">portfolio</h2>
                     </div>
-                    <div class="portfolio-brands mt-3">
-                        <ul class="list-unstyled">
+                    <div class="portfolio-brands mt-3"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                        <ul class="list-unstyled" >
                             <li class="list" data-filter="all">All</li>
                             <li class="list" data-filter="Web">Web</li>
                             <li class="list" data-filter="design">Design</li>
@@ -250,7 +251,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="portfolio-item all">
+                <div class="portfolio-item all"  data-aos="zoom-out-right" data-aos-duration="1000" data-aos-delay="150">
                     <a href="#">
                         <picture>
                             <source srcset="assets/images/sq_img_1.webp">
@@ -259,7 +260,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="portfolio-item all web  brand">
+                <div class="portfolio-item all web  brand" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="150" >
                     <a href="#">
                         <picture>
                             <source srcset="assets/images/sq_img_2.webp">
@@ -268,7 +269,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="portfolio-item all web design ">
+                <div class="portfolio-item all web design" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="150" >
                     <a href="#">
                         <picture>
                             <source srcset="assets/images/sq_img_3.webp">
@@ -277,7 +278,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="portfolio-item all web design brand">
+                <div class="portfolio-item all web design brand" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" 
                     <a href="#">
                         <picture>
                             <source srcset="assets/images/sq_img_4.webp">
@@ -286,7 +287,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="portfolio-item all  design ">
+                <div class="portfolio-item all  design " data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" >
                     <a href="#">
                         <picture>
                             <source srcset="assets/images/sq_img_5.webp">
@@ -295,7 +296,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="portfolio-item all web design brand" >
+                <div class="portfolio-item all web design brand" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200"  >
                     <a href="#">
                         <picture>
                             <source srcset="assets/images/sq_img_6.webp">
@@ -304,8 +305,7 @@
                         </picture>
                     </a>
                 </div>
-
-                <div class="portfolio-item all " >
+                <div class="portfolio-item all "  data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="200" >
                     <a href="#">
                         <picture>
                             <source srcset="assets/images/sq_img_7.webp">
@@ -314,8 +314,7 @@
                         </picture>
                     </a>
                 </div>
-
-                <div class="portfolio-item all web " >
+                <div class="portfolio-item all web "  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" >
                     <a href="#">
                         <picture>
                             <source srcset="assets/images/sq_img_8.webp">
@@ -324,8 +323,7 @@
                         </picture>
                     </a>
                 </div>
-
-                <div class="portfolio-item all  design brand" >
+                <div class="portfolio-item all  design brand"  data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="250" >
                     <a href="#">
                         <picture>
                             <source srcset="assets/images/sq_img_9.webp">
@@ -340,16 +338,16 @@
     <!-- end of portfolio section-->
     
     <!-- start of portfolio section-->
-    <section class="blog">
+    <section id="blog" class="blog">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center mb-4">
+                <div class="col-12 text-center mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0">
                     <div class="blog-title">
                         <span class="section-title-span">Read the latest post</span>
                         <h2 class="text-uppercase section-title">blog posts</h2>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 my-2">
+                <div class="col-md-6 col-sm-12 my-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
                     <div class="blog-content">
                         <div class="blog-content-img">
                             <picture>
@@ -368,7 +366,7 @@
                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 my-2">
+                <div class="col-md-6 col-sm-12 my-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                     <div class="blog-content">
                         <div class="blog-content-img">
                             <picture>
@@ -387,7 +385,7 @@
                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 my-2">
+                <div class="col-md-6 col-sm-12 my-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
                     <div class="blog-content">
                         <div class="blog-content-img">
                             <picture>
@@ -406,7 +404,7 @@
                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 my-2">
+                <div class="col-md-6 col-sm-12 my-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
                     <div class="blog-content">
                         <div class="blog-content-img">
                             <picture>
@@ -432,6 +430,7 @@
 
     <!-- start of footer-->
     <footer class="mt-4">
+        <a class="top-btn text-white" href="#home">^</a>
         <div class="footer-clip">
             <div class="container">
                 <div class="footer-content">
