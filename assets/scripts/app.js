@@ -1,3 +1,8 @@
+//animation library
+AOS.init();
+
+
+/*start of projects filter */
 $(document).ready(function(){
   //defult active list *all*
   $('.list').first().addClass('active');
@@ -6,13 +11,13 @@ $(document).ready(function(){
     const projectList = $(this).attr('data-filter');
     if(projectList == 'all')
     {
-      $('.protfolio-item').show('300');
+      $('.portfolio-item').show('300');
     }
     else
     {
-      $('.protfolio-item').not('.'+projectList).hide('300' ,function(){
-        $('.protfolio-item').filter('.'+projectList).show('300');
-      });
+      $('.portfolio-item').not('.'+projectList).hide('300' ,function(){
+      $('.portfolio-item').filter('.'+projectList).show('300');
+    });
     
     }
   })
@@ -21,5 +26,4 @@ $(document).ready(function(){
     $(this).addClass('active').siblings().removeClass('active');
   })
 })
-
-AOS.init();
+/*end of projects filter */
