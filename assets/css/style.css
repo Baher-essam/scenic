@@ -16,6 +16,18 @@ a, a:hover{color: #000; text-decoration: none;}
 }
 .p-sm-4 {padding: 4%;}
 .text-sm-center {text-align: center;}
+
+/*start of navbar navbar*/
+nav
+{
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+.scrolled {background-color: rgba(0, 0, 0, 0.5) !important;}
+/*end of navbar navbar*/
 /*start of header*/
 header
 {

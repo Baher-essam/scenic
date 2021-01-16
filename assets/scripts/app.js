@@ -2,6 +2,12 @@
 AOS.init();
 
 
+//start of navbar chnage color on scroll
+$(window).scroll(function(){
+  $('nav').toggleClass('scrolled' , $(this).scrollTop()>150);
+  })
+  //end of navbar chnage color on scroll
+  
 /*start of projects filter */
 $(document).ready(function(){
   //defult active list *all*
